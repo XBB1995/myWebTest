@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Js doc</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+}
+.tabtop {
+	margin-top: 10px;
+	background-color: white;
+	font-size: 12px;
+	border-collapse: collapse;
+}
+.tabtop tr td {
+	border: 1px solid lightgray;
+	width: 50px;
+	vertical-align: top;
+	padding-left: 5px;
+}
+.tabtop tr:first-child {
+	background-color: #233;
+	color: white;
+	font-family: "微软雅黑",sans-serif;
+	font-weight: bold;
+}
+.tabtop tr.tr_gray {
+	background-color: lightcyan;
+}
+.btn {
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	border: 1px solid red;
+	cursor: pointer;
+}
+</style>
+	</head>
+	<body>
+		<p align="center"><b>比较运算符表</b></p>
+		<table class="tabtop" width="300px" cellpadding="0px" cellspacing="0px" bgcolor="#cccccc" align="center">
+			<tr>
+				<td>运算符</td>
+				<td colspan="2">描述</td>
+				<td>比较</td>
+				<td>返回值</td>
+				<td>实例</td>
+			</tr>
+			<tr>
+				<td rowspan="2">==</td>
+				<td colspan="2" rowspan="2">等于</td>
+				<td>x==8</td>
+				<td>false</td>
+				<td>
+					<button class="btn" onclick="jump2page()">实例</button>
+				</td>
+			</tr>
+			<tr>
+				<td>x==5</td>
+				<td>true</td>
+				<td>
+					<button class="btn" onclick="jump2page()">实例</button>
+				</td>
+			</tr>
+			<tr class="tr_gray">
+				<td rowspan="2">===</td>
+				<td colspan="2" rowspan="2">绝对等于</td>
+				<td>x==='8'</td>
+				<td>false</td>
+				<td>
+					<button class="btn" onclick="jump2page()">实例</button>
+				</td>
+			</tr>
+			<tr class="tr_gray">
+				<td>x===5</td>
+				<td>true</td>
+				<td>
+					<button class="btn" onclick="jump2page()">实例</button>
+				</td>
+			</tr>
+			<tr>
+				<td >===</td>
+				<td colspan="2">绝对等于</td>
+				<td>x==='8'</td>
+				<td>false</td>
+				<td>
+					<button class="btn" onclick="jump2page()">实例</button>
+				</td>
+			</tr>
+			<tr class="tr_gray">
+				<td>===</td>
+				<td colspan="2">绝对等于</td>
+				<td>x==='8'</td>
+				<td>false</td>
+				<td>
+					<button class="btn" onclick="jump2page()">实例</button>
+				</td>
+			</tr>
+		</table>
+		<script>
+			function jump2page() {
+				alert("!");
+			}
+		</script>
+	</body>
+</html>
